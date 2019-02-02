@@ -9,12 +9,7 @@
       <img class="ui tiny rounded image centered" src="{% static "item/ramune.jpg" %}" alt="ramune">
     </div>
     <form method="POST" action="https://mainnet.demo.btcpayserver.org/apps/2npcUYfenT45hFPpXwMdpSxPDiEw/pos">
-      <input type="hidden" name="amount" value="80" />
-      <input type="hidden" name="email" value="customer@example.com" />
-      <input type="hidden" name="orderId" value="CustomOrderId" />
-      <input type="hidden" name="notificationUrl" value="0.0.0.0:8000/admin/item/callback" />
-      <input type="hidden" name="redirectUrl" value="0.0.0.0:8000/admin/item/thanks" />
-      <button type="submit" class="ui button">Buy now</button>
+      <button class="fluid ui button" type="submit" name="choiceKey" value="ramune">¥60円で買う</button>
     </form>
   </div>
   <div class="column">
@@ -23,12 +18,7 @@
       <img class="ui tiny rounded image centered" src="{% static "item/calorie_mate.jpg" %}" alt="ramune">
     </div>
     <form method="POST" action="https://mainnet.demo.btcpayserver.org/apps/2npcUYfenT45hFPpXwMdpSxPDiEw/pos">
-      <input type="hidden" name="amount" value="80" />
-      <input type="hidden" name="email" value="customer@example.com" />
-      <input type="hidden" name="orderId" value="CustomOrderId" />
-      <input type="hidden" name="notificationUrl" value="0.0.0.0:8000/admin/item/callback" />
-      <input type="hidden" name="redirectUrl" value="0.0.0.0:8000/admin/item/thanks" />
-      <button type="submit" class="ui button">Buy now</button>
+      <button class="fluid ui button" type="submit" name="choiceKey" value="カロリーメイト">¥160円で買う</button>
     </form>
   </div>
 {% endblock %}
